@@ -1,0 +1,10 @@
+numpy~=1.23.5
+matplotlib~=3.7.0
+scikit-learn~=1.2.0
+torchmetrics~=0.11.3
+pylidc~=0.2.3
+pillow~=9.4.0
+tqdm~=4.64.1
+torch~=2.0.0
+argparse~=1.4.0
+h5py~=3.8.0
