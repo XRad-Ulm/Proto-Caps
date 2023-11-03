@@ -161,9 +161,9 @@ if __name__ == "__main__":
                     print("PE_val_acc: " + str(valwProtoE_acc))
                     print("PE_val_attracc: " + str(valwProtoE_attracc))
 
-                    print("save model")
-                    torch.save(model, str(datestr) + "_" + str(valwProtoE_acc) + '.pth')
                     if valwProtoE_acc > best_val_acc:
+                        torch.save(model, str(datestr) + "_" + str(valwProtoE_acc) + "_" + str(ep) + '.pth')
+                        print("Save new best model with path: " + str(datestr) + "_" + str(valwProtoE_acc) + "_" + str(ep) + '.pth')
                         best_val_acc = valwProtoE_acc
                         earlyStopping_counter = 1
                     else:
